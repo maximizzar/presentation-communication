@@ -16,35 +16,33 @@ Maximilian Krönung
 
 ## Passwortmanager
 
-![bg right:20% h:160](res/bitwarden-icon.svg)
-
 - Verschlüsselter Speicher für Kennworte
 - Sollte Plattformübergreifend sein
 - Mehr Sicherheit -> nur ein pw merken
 - QoL
-    + Autofillin
-    + Autoregister
+    - Autofillin
+    - Autoregister
 - Kleiner Nachteil: masterpw
 
 ---
 
-### Passwortmanager - (non)cloud
+### Passwortmanager - cloud
 
 ![bg right:20% h:160](res/microsoft_azure-icon.svg)
 
-- Vorteile
+- Syncronisation
+- "Überall" erreichbar
+- Einfacher zu handeln
 
-    + Syncronisation
-    + "Überall" erreichbar
-    + Einfacher zu handeln
+---
 
-- Nachteile
+#### Passwortmanager non-cloud
 
-    + Manuelle Syncronisation
-    + Nur lokal
-    + Komplizierter ab 2 Geräten
+![bg right:20% h:160](res/nix.png)
 
-- Mittelweg: Selfhost
+- Manuelle Syncronisation
+- Nur lokal
+- Komplizierter ab 2 Geräten
 
 ---
 
@@ -53,31 +51,31 @@ Maximilian Krönung
 ![bg right:20% h:160](res/bitwarden-icon.svg)
 
 - Open source
-
-    + Selfhost möglich
-    + ebenfalls Zero Knowledge E2E-Verschlüsselung
-
+    - Selfhost möglich
+    - ebenfalls Zero Knowledge E2E-Verschlüsselung
 - Auch ohne Abo sehr umfangreich
 - Auch offline Nutzbar (Sync nicht möglich) 
 
 ---
 
-## Multi faktor authentisierung (MFA)
+## Mehr Faktor Authentisierung (MFA)
 
-- Fragt besitz und biometrie ab
+
+
+- Fragt Besitz und Biometrie ab
 - Phishing wird schwerer
-
-    + -50% Google-Account übernahmen
-
-- Pw verlust verkraftbar
+    - -50% Google-Account übernahmen
+- Pw Verlust verkraftbar
 
 ---
+
 ### MFA - Fallstricke
+
+![bg right:20% h:160](res/nix.png)
 
 - Schützt nur bei Anmeldung
 - Dauerhafter Zugriffsverlust möglich
-
-    + Wichtig! -> Backupcodes sichern
+    - Wichtig! -> Backupcodes sichern
 
 ---
 
@@ -87,8 +85,7 @@ Maximilian Krönung
 
 - Übertragung im Klartext -> schlecht
 - Zentrierung des Risikos
-
-    + Worstcase: Konto-email = 2FA-email
+    - Worstcase: Konto-email = 2FA-email
 
 ---
 
@@ -102,3 +99,38 @@ Maximilian Krönung
 ---
 
 ### MFA - apps
+
+![bg right:20% h:160](res/web-app-developing.svg)
+
+- Keine Dritten Involviert
+    - Email Provider
+    - SMS Dienstleister
+- Schlüssel (QR-Code) verschlüsselt
+- Funktion: 
+    - Schlüssel + Zeit = Code
+    - srv-Code = clnt-Code -> ok
+
+---
+
+# Quellen
+
+[Ein Vergleich von PASSWORTMANAGERN](https://www.youtube.com/watch?v=YwbE2iLmAT0)
+[Vergleich: NICHT ALLE Zwei-Faktor-Methoden sind sicher!](https://www.youtube.com/watch?v=EY9hiHD9XKU)
+
+---
+
+# Bild Quellen
+
+[bitwarden-icon.svg](https://www.vectorlogo.zone/logos/bitwarden/index.html)
+[gmail-icon.svg](https://www.vectorlogo.zone/logos/gmail/index.html)
+[microsoft_azure-icon.svg](https://www.vectorlogo.zone/logos/microsoft_azure/index.html)
+[sms-chat-bubble.svg](https://freesvg.org/1531719185)
+[web-app-developing.svg](https://freesvg.org/web-app-developing)
+
+---
+
+# Extras
+Präsentation in Markdown mittels Marpit
+
+[Markdown Presentation Ecosystem](https://marp.app/)
+[Never use PowerPoint again](https://www.youtube.com/watch?v=EzQ-p41wNEE#)
