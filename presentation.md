@@ -10,6 +10,7 @@ header: ''
 footer: ''
 
 --- 
+
 <!-- Slide 1 -->
 
 <!-- Learning res
@@ -20,20 +21,17 @@ doc: https://marpit.marp.app/markdown/
 # Accountsicherheit für User
 Maximilian Krönung
 
---- 
-<!-- Slide 2 -->
-
-## Gliederung
-
-### Tools
-
-#### Passwortmanager
-
-#### MFA App
-
-#### Hardware Schlüssel
-
-
-
 ---
-![w:256 h:256](https://upload.wikimedia.org/wikipedia/commons/c/cc/Bitwarden_logo.svg)
+
+
+## passwortmanager
+
+![bg left:20% w:128 h:128](bitwarden-icon.svg)
+
+- Speichert und Erstellt passwörter
+
+
+<!-- quellen
+
+Bitwarden icon -> https://www.vectorlogo.zone/logos/bitwarden/
+>
