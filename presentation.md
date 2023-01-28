@@ -6,32 +6,99 @@ class: invert
 paginate: true
 _paginate: false
 
-header: ''
-footer: ''
-
 --- 
 
-<!-- Slide 1 -->
+# IT Sicherheit für Benutzer
 
-<!-- Learning res
-tut: https://www.youtube.com/watch?v=EzQ-p41wNEE#
-doc: https://marpit.marp.app/markdown/ 
--->
-
-# Accountsicherheit für User
 Maximilian Krönung
 
 ---
 
+## Passwortmanager
 
-## passwortmanager
+![bg right:20% h:160](res/bitwarden-icon.svg)
 
-![bg left:20% w:128 h:128](bitwarden-icon.svg)
+- Verschlüsselter Speicher für Kennworte
+- Sollte Plattformübergreifend sein
+- Mehr Sicherheit -> nur ein pw merken
+- QoL
+    + Autofillin
+    + Autoregister
+- Kleiner Nachteil: masterpw
 
-- Speichert und Erstellt passwörter
+---
 
+### Passwortmanager - (non)cloud
 
-<!-- quellen
+![bg right:20% h:160](res/microsoft_azure-icon.svg)
 
-Bitwarden icon -> https://www.vectorlogo.zone/logos/bitwarden/
->
+- Vorteile
+
+    + Syncronisation
+    + "Überall" erreichbar
+    + Einfacher zu handeln
+
+- Nachteile
+
+    + Manuelle Syncronisation
+    + Nur lokal
+    + Komplizierter ab 2 Geräten
+
+- Mittelweg: Selfhost
+
+---
+
+### Passwortmanager - Bitwarden
+
+![bg right:20% h:160](res/bitwarden-icon.svg)
+
+- Open source
+
+    + Selfhost möglich
+    + ebenfalls Zero Knowledge E2E-Verschlüsselung
+
+- Auch ohne Abo sehr umfangreich
+- Auch offline Nutzbar (Sync nicht möglich) 
+
+---
+
+## Multi faktor authentisierung (MFA)
+
+- Fragt besitz und biometrie ab
+- Phishing wird schwerer
+
+    + -50% Google-Account übernahmen
+
+- Pw verlust verkraftbar
+
+---
+### MFA - Fallstricke
+
+- Schützt nur bei Anmeldung
+- Dauerhafter Zugriffsverlust möglich
+
+    + Wichtig! -> Backupcodes sichern
+
+---
+
+### MFA - Email
+
+![bg right:20% h:160](res/gmail-icon.svg)
+
+- Übertragung im Klartext -> schlecht
+- Zentrierung des Risikos
+
+    + Worstcase: Konto-email = 2FA-email
+
+---
+
+### MFA - SMS
+
+![bg right:20% h:160](res/sms-chat-bubble.svg)
+
+- Verbeitet da es einfach ist
+- Übertragung im Klartext -> schlecht
+
+---
+
+### MFA - apps
