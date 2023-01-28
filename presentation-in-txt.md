@@ -18,9 +18,17 @@ Bitwarden ist meine persönliche Wahl wenn es um Passwortmanager geht. Ich Nutze
 Mittels MFA wird neben dem Passwort, dem Wissen, bei einem Login auch der Besitz oder Biometrie abgefragt. Dies sorgt für eine Erhöhte Sicherheit, da nun nicht mehr die Accountsicherheit im Wissen liegt. Dies Reduziert die effektivität von Phishing massiv. Laut eigenen angaben konnte Google, durch das Erzwingen von mindestens einem Zweiten Faktor, die Übernahme von Konten um 50% Reduzieren. Nur gibt es immer noch viele Dienste, Spotifiy, Netflix, die nicht auf MFA setzen.
 
 ### MFA - Fallstricke
+Zu bedenken gilt das eine Absicherung eines Kontos nur hilft um sich gegen unberechtigte Neuanmeldungen abzusichern. Wird bspw. die Anmeldeinformation mittels Cookie auf einem Gerät hinterlegt, kann dieser sogenannte Session-cookie gestohlen werden. Es ist also ebenfalls erforderlich zu Überdenken auf welchen Geräten sich Eingeloggt wird und ob dies Dauerhaft geschehen soll.
 
+Auch ist ein Dauerhafter ausschluss nicht unmöglich. Geht ein Faktor für die Anmeldung verloren und es gibt keine Ausweichmöglichkeit, so ist eine Wiederherstellung des Kontos nciht mehr möglich.  
 
-### Wall of shame
-
-### MFA - Email?
+### MFA - Email
 Mittels Email einen Zweiten Faktor bereitzustellen ist sowohl einfach, als auch unkompliziert. Dies bringt jedoch einige Probleme mitsich. Zum einen ist der Überwiegende teil des Emailverkehrs unverschlüsselt. Für den Austausch von Anmeldeinformation ist dies generell Problematisch. Außerdem muss davon ausgegangen werden, dass auch ein Email Konto gehackt werden kann. Somit ist dieser zusätzliche Faktor nichtig, sobald der Emailaccount gehackt wurde. Im schlimmsten Fall ist der komplette Account verloren, wenn sich mit dem selben Email Konto registriert wurde.
+
+### MFA - SMS
+Auch die altbekannt SMS wird häufig eingesetz, um schnell und einfach eine MFA Möglichkeit bereitzustellen. Leider gibt es auch hierbei keine E2E-Verschlüsslung, weshalb eine Vertrauenswürdigkeit nicht gewährleistet ist. 
+
+Auch können Mitarbeiter eines SMS-Providers sämtliche SMS Lesen und sind somit nichts mehr Wert. Ein weiterer Angriffsvektor über den Provider wäre eine Identitätstäuschung. Somit kann es möglich sein, dass ein Angreifer für das Opferbestimmte Nachrichten, also Auth Codes bekommt.
+
+### MFA - Apps
+MFA Apps bieten einen sehr großen Vorteil. Es ist kein Provider o.ä. mehr zwischen dem Nutzer und dem Dienst. Es gibt eine Direkte E2E-Verschlüsslung. Auch können mehrere Dienste in einer Apps bequem Eingefügt und Verwaltet werden. Die Geheimnisse die eine solche app Generiert sind Zeitbasierte, meist 6-Stellige, Codes. Sie werden aus einem, von dem jeweiligen Dienst bereitgestellten, Schlüssel, meist als QR-Code dargestellt, und der Aktuellen Zeit generiert. Dies machen sowohl app als auch der Dienst. Ist der vom Nutzer einegegebene Code mit dem des Dienstes Identisch, gilt der Besitz nachgewisen.
