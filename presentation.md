@@ -2,7 +2,7 @@
 marp: true
 author: Maximilian Krönung
 size: 16:9
-theme: uncover
+theme: gaia
 class: invert
 
 paginate: true
@@ -58,8 +58,8 @@ Maximilian Krönung
 
 ### Passwortmanager - non-cloud
 ![bg right:20% h:160](res/nix.png)
-- Manuelle Syncronisation
 - Nur lokal
+- Manuelle Syncronisation
 - Komplizierter ab 2 Geräten
 
 ---
@@ -101,7 +101,7 @@ Maximilian Krönung
 
 ### MFA - SMS
 ![bg right:20% h:160](res/sms-chat-bubble.svg)
-- Verbeitet da es einfach ist
+- Verbreitet da es einfach ist,
 - Übertragung im Klartext -> schlecht
 - Kom. über 3te (SMS Dienstleister + Provider)
 
@@ -138,7 +138,7 @@ Problem: Kreiert einen Single-point-of-failure
 - Simple -> ähnlich zu gAuthenticator
 - Bietet Backupmöglichkeiten 
     - Verschlüsselt + Cloud
-    
+
 ---
 
 ---
